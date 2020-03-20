@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		DDB76747242418380006CBE7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB76746242418380006CBE7 /* AppDelegate.swift */; };
 		DDB76749242418380006CBE7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB76748242418380006CBE7 /* SceneDelegate.swift */; };
-		DDB7674B242418380006CBE7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB7674A242418380006CBE7 /* ViewController.swift */; };
+		DDB7674B242418380006CBE7 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB7674A242418380006CBE7 /* CalculatorViewController.swift */; };
 		DDB7674E242418380006CBE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB7674C242418380006CBE7 /* Main.storyboard */; };
 		DDB76751242418380006CBE7 /* TIP_ME.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DDB7674F242418380006CBE7 /* TIP_ME.xcdatamodeld */; };
 		DDB76753242418400006CBE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDB76752242418400006CBE7 /* Assets.xcassets */; };
 		DDB76756242418400006CBE7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDB76754242418400006CBE7 /* LaunchScreen.storyboard */; };
+		DDB7675E24254ED80006CBE7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDB7675D24254ED80006CBE7 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		DDB76743242418380006CBE7 /* TIP ME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TIP ME.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DDB76743242418380006CBE7 /* Tip me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tip me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDB76746242418380006CBE7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDB76748242418380006CBE7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDB7674A242418380006CBE7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDB7674A242418380006CBE7 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
 		DDB7674D242418380006CBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDB76750242418380006CBE7 /* TIP_ME.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TIP_ME.xcdatamodel; sourceTree = "<group>"; };
 		DDB76752242418400006CBE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDB76755242418400006CBE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDB76757242418400006CBE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDB7675D24254ED80006CBE7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +52,7 @@
 		DDB76744242418380006CBE7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DDB76743242418380006CBE7 /* TIP ME.app */,
+				DDB76743242418380006CBE7 /* Tip me.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +62,9 @@
 			children = (
 				DDB76746242418380006CBE7 /* AppDelegate.swift */,
 				DDB76748242418380006CBE7 /* SceneDelegate.swift */,
-				DDB7674A242418380006CBE7 /* ViewController.swift */,
+				DDB7674A242418380006CBE7 /* CalculatorViewController.swift */,
 				DDB7674C242418380006CBE7 /* Main.storyboard */,
+				DDB7675D24254ED80006CBE7 /* ResultViewController.swift */,
 				DDB76752242418400006CBE7 /* Assets.xcassets */,
 				DDB76754242418400006CBE7 /* LaunchScreen.storyboard */,
 				DDB76757242418400006CBE7 /* Info.plist */,
@@ -87,7 +90,7 @@
 			);
 			name = "TIP ME";
 			productName = "TIP ME";
-			productReference = DDB76743242418380006CBE7 /* TIP ME.app */;
+			productReference = DDB76743242418380006CBE7 /* Tip me.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -141,7 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDB7674B242418380006CBE7 /* ViewController.swift in Sources */,
+				DDB7675E24254ED80006CBE7 /* ResultViewController.swift in Sources */,
+				DDB7674B242418380006CBE7 /* CalculatorViewController.swift in Sources */,
 				DDB76751242418380006CBE7 /* TIP_ME.xcdatamodeld in Sources */,
 				DDB76747242418380006CBE7 /* AppDelegate.swift in Sources */,
 				DDB76749242418380006CBE7 /* SceneDelegate.swift in Sources */,
@@ -296,7 +300,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Vladimir.TIP-ME";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tip me";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -314,7 +318,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Vladimir.TIP-ME";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Tip me";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
