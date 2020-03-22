@@ -20,6 +20,8 @@ class CalculatorViewController: UIViewController {
     var tipValue = 0.10
     var persons = 2
     var billValue = 0.0
+    var resultTo2DecimalPlaces  = "0.0"
+    
     @IBAction func tipChanged(_ sender: UIButton) {
         text12.endEditing(true)
         
@@ -39,27 +41,30 @@ class CalculatorViewController: UIViewController {
     @IBAction func stepperValueChanged(_ sender: UIStepper) {
         splitNumberLabel.text = String(format: "%.0f", sender.value)
         persons = Int(sender.value)
+        
     }
     
+    
     @IBAction func calculatePressed(_ sender: UIButton) {
-        print(tipValue)
-       print(persons)
-        
-        
-        
         let bill = text12.text!
         if bill != "" {
             billValue = Double(bill)!
             let result = billValue * (1 + tipValue) / Double(persons)
-            let resultTo2DecimalPlaces = String(format: "%.2f", result)
-            
-            print(resultTo2DecimalPlaces)
+          resultTo2DecimalPlaces = String(format: "%.2f", result)
         }
         
         
-        
-        
-        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                   if segue.identifier == "goToResult" {
+                    let destinationVC = segue.destination as! ResultViewController
+                    destinationVC.billVlaue = resultTo2DecimalPlaces
+                    destinationVC.persons = persons
+                    destinationVC.tip = Int(tipValue * 100)
+           
+        }
     }
 }
 
